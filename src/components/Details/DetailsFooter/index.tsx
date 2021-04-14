@@ -12,7 +12,7 @@ const DetailsFooter: React.FC = () => {
 
       <Footer>
         <FooterLeft>
-          <BiRocket />{' '}
+          <BiRocket />
           <span>Veja todos os outros recursos disponíveis para te ajudar </span>
         </FooterLeft>
         <FooterRight>

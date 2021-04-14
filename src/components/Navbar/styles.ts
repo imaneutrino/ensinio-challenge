@@ -24,9 +24,22 @@ export const Nav = styled.nav`
   align-items: center;
   justify-content: space-between;
 
+  @media (max-width: 767.98px) {
+    padding: 1rem 5px;
+  }
+
+  .active {
+    display: block;
+  }
+
   .logo {
     width: 10rem;
     height: 2.5rem;
+
+    @media (max-width: 767.98px) {
+      width: 7rem;
+      height: 3rem;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -35,6 +48,20 @@ export const Nav = styled.nav`
 
   .toggleMenu {
     display: none;
+    background: none;
+    border: none;
+    svg {
+      width: 40px;
+      height: 40px;
+      color: var(--color-white);
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    @media (max-width: 767.98px) {
+      display: block;
+    }
   }
 `;
 
@@ -42,6 +69,10 @@ export const NavItems = styled.div`
   display: flex;
   align-items: center;
   width: 70%;
+
+  @media (max-width: 767.98px) {
+    display: none;
+  }
 
   a {
     color: var(--color-white);

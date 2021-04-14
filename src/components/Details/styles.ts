@@ -4,6 +4,10 @@ export const Container = styled.div`
   width: 100%;
   max-width: 1220px;
   margin: 110px auto;
+
+  @media (max-width: 767.98px) {
+    margin: 50px auto;
+  }
 `;
 
 export const HeadingGroup = styled.div`
@@ -11,10 +15,19 @@ export const HeadingGroup = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+    }
+
     p {
+      @media (max-width: 767.98px) {
+        margin: 10px;
+      }
+
       &:nth-child(1) {
         font-family: 'Livvic';
-        font-size: 16px;
+        font-size: 1rem;
         text-transform: uppercase;
         font-weight: 600;
         color: var(--color-darkPurple);
@@ -39,5 +52,9 @@ export const HeadingGroup = styled.div`
     font-family: 'Livvic';
     font-size: 2rem;
     color: var(--color-darkGrey);
+
+    @media (max-width: 767.98px) {
+      font-size: 1.5rem;
+    }
   }
 `;

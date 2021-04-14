@@ -4,6 +4,12 @@ import api from '../../../services/api';
 
 import { Container, BoxItem } from './styles';
 
+import Icon1 from '../../../assets/images/icon-trails.svg';
+import Icon2 from '../../../assets/images/icon-playlist.svg';
+import Icon3 from '../../../assets/images/icon-folder.svg';
+
+const icons = ['', Icon1, Icon2, Icon3];
+
 interface ItemsInterface {
   id: number;
   icon: string;
@@ -26,7 +32,7 @@ const DetailsItem: React.FC = () => {
     <Container>
       {items.map(item => (
         <BoxItem key={item.id}>
-          <img src={item.icon} alt="" />
+          <img src={icons[item.id]} alt={item.title} />
           <h3> {item.title} </h3>
           <p>{item.description}</p>
         </BoxItem>

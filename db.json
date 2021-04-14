@@ -2,19 +2,19 @@
   "items": [
     {
       "id": 1,
-      "icon": "/static/media/icon-trails.44f756e6.svg",
+      "icon": "icon-trails.svg",
       "title": "Trilhas de etapas",
       "description": "Crie planos de estudos especificando aulas e/ou cursos e definindo a ordem que seus alunos devem estudar."
     },
     {
       "id": 2,
-      "icon": "/static/media/icon-playlist.eee02d19.svg",
+      "icon": "icon-playlist.svg",
       "title": "Playlists",
       "description": "Transforme uma coleção em uma playlist para poder ver vídeos e áudios em sequência offline."
     },
     {
       "id": 3,
-      "icon": "/static/media/icon-folder.fc3a996c.svg",
+      "icon": "icon-folder.svg",
       "title": "Coleções",
       "description": "Crie coleções, adicione conteúdos, reorganize ítens e deixe tudo do seu jeito para melhorar a experiência."
     }
