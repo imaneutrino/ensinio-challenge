@@ -10,7 +10,7 @@ const MainContent: React.FC = () => {
       <LeftContent>
         <hgroup>
           <h2>
-            <img src={DevicesIcon} alt="Devices icon" /> plataforma all in one{' '}
+            <img src={DevicesIcon} alt="Devices icon" /> plataforma all in one
           </h2>
           <h1> Sua escola online poderosa e lucrativa </h1>
         </hgroup>

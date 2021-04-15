@@ -25,7 +25,7 @@ export const Container = styled.section`
 `;
 
 export const LeftContent = styled.article`
-  width: 45%;
+  width: 40%;
   height: 90%;
   display: flex;
   flex-direction: column;
@@ -37,7 +37,7 @@ export const LeftContent = styled.article`
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   h2 {
@@ -49,6 +49,7 @@ export const LeftContent = styled.article`
 
     display: flex;
     align-items: center;
+    justify-content: center;
 
     @media (max-width: 992px) {
       justify-content: center;
@@ -124,7 +125,7 @@ export const LeftContent = styled.article`
 
 export const RightContent = styled.article`
   width: 50%;
-  height: 80%;
+  height: 85%;
   img {
     width: 100%;
     height: 100%;
