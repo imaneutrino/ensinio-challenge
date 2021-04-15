@@ -5,7 +5,7 @@ export const Container = styled.div`
   max-width: 1220px;
   margin: 110px auto;
 
-  @media (max-width: 767.98px) {
+  @media (max-width: 992px) {
     margin: 50px auto;
   }
 `;
@@ -16,12 +16,12 @@ export const HeadingGroup = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width: 767.98px) {
+    @media (max-width: 992px) {
       flex-direction: column;
     }
 
     p {
-      @media (max-width: 767.98px) {
+      @media (max-width: 992px) {
         margin: 10px;
       }
 
@@ -53,8 +53,9 @@ export const HeadingGroup = styled.div`
     font-size: 2rem;
     color: var(--color-darkGrey);
 
-    @media (max-width: 767.98px) {
+    @media (max-width: 992px) {
       font-size: 1.5rem;
+      text-align: center;
     }
   }
 `;

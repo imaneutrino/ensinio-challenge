@@ -11,17 +11,20 @@ export const Container = styled.section`
     rgba(65, 181, 217, 1) 100%
   );
 
-  @media (max-width: 767.98px) {
+  @media (max-width: 992px) {
+    padding: 0 5px;
+  }
+  @media (min-width: 993px) {
     padding: 0 5px;
   }
 `;
 
 export const IconsContainer = styled.div`
   position: relative;
-  max-width: 1370px;
+  max-width: 94%;
   margin: 0 auto;
 
-  @media (max-width: 767.98px) {
+  @media (max-width: 992px) {
     display: none;
   }
   img {

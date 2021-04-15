@@ -33,8 +33,10 @@ const DetailsItem: React.FC = () => {
       {items.map(item => (
         <BoxItem key={item.id}>
           <img src={icons[item.id]} alt={item.title} />
-          <h3> {item.title} </h3>
-          <p>{item.description}</p>
+          <div>
+            <h3> {item.title} </h3>
+            <p>{item.description}</p>
+          </div>
         </BoxItem>
       ))}
     </Container>

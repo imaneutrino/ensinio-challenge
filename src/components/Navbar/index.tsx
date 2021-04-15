@@ -25,6 +25,14 @@ import EnIcon from '../../assets/images/usa.svg';
 import EsIcon from '../../assets/images/spain.svg';
 
 const Navbar: React.FC = () => {
+  const navbarList: HTMLElement | null = document.getElementById(
+    'navbarToggle',
+  );
+
+  function toggleNavbar(): void {
+    navbarList?.classList.toggle('active');
+  }
+
   return (
     <>
       <Container>
@@ -34,6 +42,7 @@ const Navbar: React.FC = () => {
           </a>
 
           <button
+            onClick={toggleNavbar}
             className="toggleMenu"
             type="button"
             aria-label="Toggle Navigation"
@@ -41,7 +50,7 @@ const Navbar: React.FC = () => {
             <GiHamburgerMenu />
           </button>
 
-          <NavItems>
+          <NavItems id="navbarToggle">
             <LeftNavItem>
               <li className="dropdown-leftNav">
                 <a href="/">

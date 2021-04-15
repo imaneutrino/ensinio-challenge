@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
+import { darken } from 'polished';
+
 export const Container = styled.section`
   width: 100%;
   height: 100vh;
-  max-width: 76.25rem;
+  max-width: 94%;
   margin: 0 auto;
   padding-top: 106px;
 
@@ -11,17 +13,25 @@ export const Container = styled.section`
   justify-content: space-between;
   align-items: flex-end;
 
-  @media (max-width: 767.98px) {
+  @media (max-width: 992px) {
     text-align: center;
     align-items: center;
+  }
+
+  @media (min-width: 993px) {
+    text-align: center;
+    align-items: flex-end;
   }
 `;
 
 export const LeftContent = styled.article`
-  width: 34.01%;
-  height: 480px;
+  width: 45%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  @media (max-width: 767.98px) {
+  @media (max-width: 992px) {
     height: 100%;
     width: 100%;
 
@@ -40,7 +50,7 @@ export const LeftContent = styled.article`
     display: flex;
     align-items: center;
 
-    @media (max-width: 767.98px) {
+    @media (max-width: 992px) {
       justify-content: center;
     }
 
@@ -70,7 +80,7 @@ export const LeftContent = styled.article`
     align-items: center;
     margin-top: 44px;
 
-    @media (max-width: 767.98px) {
+    @media (max-width: 992px) {
       flex-direction: column;
     }
     button {
@@ -78,9 +88,11 @@ export const LeftContent = styled.article`
       width: 180px;
       border-radius: 50px;
 
-      @media (max-width: 767.98px) {
-        width: 100%;
+      @media (max-width: 992px) {
+        width: 80%;
         margin: 10px 0;
+        font-size: 1.5rem;
+        height: 70px;
       }
 
       &:nth-child(1) {
@@ -89,6 +101,10 @@ export const LeftContent = styled.article`
         color: var(--color-darkGrey);
         font-family: 'Inter';
         font-weight: 600;
+
+        &:hover {
+          background: ${darken(0.08, '#00E1E7')};
+        }
       }
       &:nth-child(2) {
         display: flex;
@@ -107,13 +123,13 @@ export const LeftContent = styled.article`
 `;
 
 export const RightContent = styled.article`
-  width: 54%;
-  height: 535px;
+  width: 50%;
+  height: 80%;
   img {
     width: 100%;
     height: 100%;
   }
-  @media (max-width: 767.98px) {
+  @media (max-width: 992px) {
     display: none;
   }
 `;

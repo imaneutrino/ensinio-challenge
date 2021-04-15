@@ -12,7 +12,7 @@ export const Footer = styled.footer`
   justify-content: space-between;
   align-items: center;
 
-  @media (max-width: 767.98px) {
+  @media (max-width: 992px) {
     flex-direction: column;
     text-align: center;
     margin: 10px 0;
@@ -24,9 +24,10 @@ export const FooterLeft = styled.footer`
   align-items: center;
   font-family: 'Inter';
   font-weight: bold;
-  @media (max-width: 767.98px) {
+  @media (max-width: 992px) {
     width: 100%;
     justify-content: center;
+    font-size: 1.3rem;
   }
 
   svg {
@@ -34,7 +35,7 @@ export const FooterLeft = styled.footer`
     font-weight: bolder;
     margin-right: 2rem;
 
-    @media (max-width: 767.98px) {
+    @media (max-width: 992px) {
       display: none;
     }
   }
@@ -45,12 +46,23 @@ export const FooterRight = styled.footer`
   align-items: center;
   font-family: 'Inter';
   font-weight: bold;
+  cursor: pointer;
+  &:hover svg {
+    transform: translateX(5px);
+  }
+  @media (max-width: 992px) {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
   span {
     color: var(--color-darkPurple);
-    margin-right: 2rem;
+    @media (max-width: 992px) {
+      margin-right: 1.5rem;
+    }
   }
-
-  @media (max-width: 767.98px) {
-    margin-top: 10px;
+  svg {
+    margin: 0 1.6rem;
+    color: var(--color-darkPurple);
+    transition: 0.3s;
   }
 `;

@@ -6,16 +6,19 @@ export const Container = styled.section`
   align-items: center;
   margin-top: 67px;
 
-  @media (max-width: 767.98px) {
+  @media (max-width: 992px) {
     flex-direction: column;
-    text-align: center;
+    margin-top: 40px;
   }
 `;
 
 export const BoxItem = styled.article`
   width: 33.3%;
 
-  @media (max-width: 767.98px) {
+  @media (max-width: 992px) {
+    display: flex;
+    align-items: center;
+
     width: 100%;
     margin: 20px 0;
   }
@@ -26,6 +29,11 @@ export const BoxItem = styled.article`
 
   img {
     margin-bottom: 24px;
+    @media (max-width: 992px) {
+      width: 80px;
+      height: 80px;
+      margin-right: 20px;
+    }
   }
   h3 {
     font-family: 'Livvic';
