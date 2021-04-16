@@ -1,7 +1,10 @@
 # Ensinio's Challenge
-________________________________________
+
 ## Tech's
 
 * React Typescript
 * Styled Components
 * Polished
+
+## Installation
+`/npm install or /yarn install`
